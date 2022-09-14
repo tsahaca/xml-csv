@@ -1,0 +1,23 @@
+application:                                                                                                             
+    name: xml-csv
+                                                                                                                         
+server:                                                                                                                  
+  port: 9080
+
+logging:                                                                                                                 
+  config: classpath:logback-spring.xml                                                                                   
+  level:                                                                                                                 
+    com.example: DEBUG                                                                                    
+  file: application.log                                                                                    
+                                                                                                                         
+
+camel:                                                                                                                   
+  springboot:                                                                                                            
+    main-run-controller: true                                                                                            
+  route:                                                                                                                 
+    filePollDelay: 5000                                                                                                  
+
+#management.endpoints.web.exposure.include: jolokia
+
+
+    
